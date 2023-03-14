@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<form id="login-form" class="form center">
+    <h2>Вход</h2>
+    <p>
+        <label for="email">Почта</label>
+        <input type="email" id="email">
+    </p>
+    <p>
+        <label for="password">Пароль</label>
+        <input type="password" id="password">
+    </p>
+    <p style="text-align: center">
+        Еще не зарегистрировались?
+        <br>
+        Перейти к <a href="./index.html">регистрации</a>
+    </p>
+    <button type="submit" id="login">Войти</button>
+</form>
+
+
+<script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
+
+<script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyAh_IM85zXRlmSxpqghaQerEGLS6fCzJ_M",
+    authDomain: "todos-bed2c.firebaseapp.com",
+    projectId: "todos-bed2c",
+    storageBucket: "todos-bed2c.appspot.com",
+    messagingSenderId: "1053942888144",
+    appId: "1:1053942888144:web:c7011a90c3491e90b6d0d5",
+    measurementId: "G-X1M26K8BZZ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+</script>
+
+<script src="js/login.js"></script>
+</body>
+</html>
