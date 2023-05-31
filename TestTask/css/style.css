@@ -6,11 +6,13 @@ padding: 0;
 text-decoration: none !important;
 box-sizing: border-box;  
 scroll-behavior: smooth;
+
 }
 
 .body{
     background-color: #020A18;
     overflow-x: hidden; 
+
 }
 @font-face {
     font-family: "Open Sans Semi Bold";
@@ -36,11 +38,19 @@ scroll-behavior: smooth;
 
 
 /* Header  ------------------------*/
+.header{
+    position: fixed;
+   top:0;
+   width: 100%;
+   
+}
+
 .head{
+    
     background-color: #0a152933;
     display: flex ;
     justify-content: space-around;
-    height: 100px;
+    height: 10%;
    
    
 }
@@ -50,7 +60,7 @@ scroll-behavior: smooth;
     
     display: flex;
     justify-content: space-between;
-    width: 283.09px;
+    width: 15%;
     height: 57px;
 }
 
@@ -67,7 +77,7 @@ scroll-behavior: smooth;
 .anchor{
     display: flex;
     justify-content: space-between;
-    width: 411px;
+    width: 40%;
     height: 22px;
     margin-top: 39px;
     
@@ -79,17 +89,21 @@ scroll-behavior: smooth;
     font-family: "Open Sans Semi Bold";
     font-size: 16px;
     font-weight: 500;
+    transition: all 500ms ease;
+}
+.btnAnchor:hover{
+color: #3A68B8;
 }
 
 .ButtonReg{
     
     margin-top: 24px;
-    margin-right: 100px;
+    margin-right: 3%;
 }
 
 .button{
     
-    width: 112px;
+    width: 200%;
     height: 52px;
     color: #FFF;
     background-color: #3A68B8;
@@ -109,14 +123,12 @@ scroll-behavior: smooth;
 
     /* Home ------------------------------ */
 
-.main{
-    background-color: #020A18;
-}
+
 .hello2Elem{
     display: flex;
-    margin-top: 72px;
-    margin-left: 245px;
-    margin-right: 325px;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 15%;
     width: 604px;
     height: 415px;
     
@@ -223,27 +235,51 @@ opacity: 0.7;
 }
 
 .helloImg{
-    width:1146.45px;
-    margin-top: 250px;
-    margin-left: 213px;
+    width:60%;
+    margin-top: 18%;
+    margin-left: 10%;
     display: flex;
     justify-content: space-between;
+}
+
+.callback{
+    position: fixed;
+    padding-left: 45%;
+    width: 60%;
+    margin-top: 8%;
+}
+.callbackBtn{
+   width: 20%;
+   border: 0px;
+   background-color: #3A68B8;
+   border-radius: 50%;
+   padding-top: 3%;
+   padding-bottom: 3%;
+   padding-left: 3%;
+   padding-right: 3%;
+   transition: all 500ms ease;
+}
+.callbackBtn:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
     /* About---------------------------------------- */
 
 .AboutElem{
-    padding-bottom: 163px;
-    margin-top: 306px;
-    margin-left: 256px;
+    padding-bottom: 10%;
+    margin-top: 10%;
+    margin-left: 10%;
     display: flex;
     justify-content: space-between;
 }
 .AboutTxt{
-    margin-right: 300px;
-padding-top: 178px;
+    padding-left: 5%;
+    margin-right: 10%;
+    padding-top: 10%;
 }
 .AboutTxt1{
-width: 484px;
+width: 100%;
 height: 104px;
 font-family: 'Open Sans Bold';
 font-style: normal;
@@ -257,7 +293,7 @@ color: #FFFFFF;
 
 }
 .AboutTxt2{
-width: 460px;
+width: 100%;
 height: 78px;
 margin-top: 30px;
 
@@ -276,7 +312,7 @@ opacity: 0.7;
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
-    width: 150px;
+    width: 25%;
     height: 52px; 
     color: #FFF;
     background-color: #3A68B8;
@@ -373,14 +409,14 @@ opacity: 0.7;
 /* Blog */
 
 .Blog{
-    padding-bottom: 169px;
-    margin-top: 170px;
+    padding-bottom: 5%;
+    margin-top: 5%;
     display: flex;
-    margin-left: 325px;
+    margin-left: 10%;
     
 }
 .blogTxt1{
-width: 548px;
+width: 100%;
 height: 104px;
 
 
@@ -422,10 +458,10 @@ height: 551px;
 /* Footer ---------------------- */
 .foot{ 
     
-    padding-top: 78px;
+    padding-top: 10%;
     background-color: #0a152933;
     display: flex !important;
-    padding-bottom: 141px;
+    padding-bottom: 10%;
 }
 .footerTxt{
 
@@ -444,16 +480,16 @@ opacity: 0.6;
 }
 .footTxt1{
     
-    width: 284px;
-    margin-left: 324px;
+    width: 20%;
+    margin-left: 10%;
 
 }
 .ContactFont {
-font-family: 'Circular Std 500' !important;
-font-style: normal!important;
-font-weight: 500!important;
-font-size: 14px!important;
-line-height: 18px!important;
+font-family: 'Circular Std 500' ;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
 /* identical to box height */
 
 
@@ -528,7 +564,7 @@ color: #FFFFFF;
     display: flex;
 }
 .socialBtn{
-    padding-left: 25px;
+    padding-left: 5%;
 }
 #lang{
     background-color: #0a152933;
@@ -553,6 +589,61 @@ color: #FFFFFF;
 @media(max-width:769px){
     
 .text1{
+    font-size: 15px;
+}
+
+.btnAnchor{
+    font-size: 14px;
+}
+.RobotIMG{
+    display: none;
+}
+.helloImg{
+    justify-content: space-between;
+    margin-left: 5%;
+   width: 80%;
+}
+
+.logoImg{
+    padding-left: 2%;
+    width: 25%;
+}
+#brainImg{
+    width: 100%;
+}
+.AboutTxt{
+    padding-top: 0%;
+}
+.AboutTxt1{
+    font-size: 15px;
+    height: 5%;
+}
+.AboutTxt2{
     font-size: 12px;
+}
+.AboutButton{
+    font-size: 11px;
+    width: 40%;
+}
+.services{
+    display: none;
+}
+.blogTxt1{
+    font-size: 22px;
+}
+.blogImg{
+    display: none;
+}
+
+.footTxt1{
+    width: 19%;
+    margin-left: 5%
+}
+
+.ContactFont{
+    font-size: 10px
+}
+.header{
+    position: relative;
 }
 }
