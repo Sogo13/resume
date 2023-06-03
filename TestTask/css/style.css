@@ -10,6 +10,7 @@ scroll-behavior: smooth;
 }
 
 .body{
+   
     background-color: #020A18;
     overflow-x: hidden; 
 
@@ -49,7 +50,7 @@ scroll-behavior: smooth;
     
     background-color: #0a152933;
     display: flex ;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 10%;
    
    
@@ -57,10 +58,10 @@ scroll-behavior: smooth;
 
 .FirstText{
     margin-top: 21px;
-    
+    padding-left: 2%;
     display: flex;
     justify-content: space-between;
-    width: 15%;
+    width: 20%;
     height: 57px;
 }
 
@@ -77,7 +78,7 @@ scroll-behavior: smooth;
 .anchor{
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    width: 30%;
     height: 22px;
     margin-top: 39px;
     
@@ -98,7 +99,7 @@ color: #3A68B8;
 .ButtonReg{
     
     margin-top: 24px;
-    margin-right: 3%;
+    margin-right: 10%;
 }
 
 .button{
@@ -123,7 +124,9 @@ color: #3A68B8;
 
     /* Home ------------------------------ */
 
-
+.main{
+    padding-top:2% ;
+}
 .hello2Elem{
     display: flex;
     margin-top: 5%;
@@ -246,7 +249,8 @@ opacity: 0.7;
     position: fixed;
     padding-left: 45%;
     width: 60%;
-    margin-top: 8%;
+    padding-top: 8%;
+    
 }
 .callbackBtn{
    width: 20%;
@@ -338,6 +342,8 @@ opacity: 0.7;
 }
 
 /* Content ---------- */
+
+
 #cardPoint1{
    
     height: 15px;
@@ -361,9 +367,10 @@ opacity: 0.7;
     display: flex;
 }
 .cardS{
-    margin-left: 190px;
+    margin-bottom: 5%;
+    margin-left: 10%;
     background-color: #0a152933 !important;
-    width: 368px;
+    width: 20%;
     height: 389px !important;
     padding-top: 40px ;
     border-radius: 10px;
